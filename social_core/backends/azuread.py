@@ -1,6 +1,6 @@
 import time
 
-from jwt import DecodeError, ExpiredSignature, decode as jwt_decode
+from jwt import DecodeError, ExpiredSignatureError, decode as jwt_decode
 
 from ..exceptions import AuthTokenError
 from .oauth import BaseOAuth2
